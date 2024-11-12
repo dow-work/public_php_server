@@ -49,8 +49,8 @@ true：JavaScriptでアクセス不可（HttpOnly）<br/>
 $response = "HTTP/1.1 200 OK\r\n";
 $response .= "Content-Type: $contentType\r\n";
 $response .= "Content-Length: " . strlen($fileContent) . "\r\n";
-$response .= "Cache-Control: public, max-age=3600\r\n"; // 1시간 동안 캐시
-$response .= "Set-Cookie: user_id=12345; Path=/; HttpOnly\r\n"; // 쿠키 설정
+$response .= "Cache-Control: public, max-age=3600\r\n"; 
+$response .= "Set-Cookie: user_id=12345; Path=/; HttpOnly\r\n"; 
 $response .= "\r\n";
 $response .= $fileContent;
 ~~~
